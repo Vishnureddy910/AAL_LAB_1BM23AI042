@@ -24,12 +24,10 @@ void printArray(int arr[], int n) {
 int main() {
     int arr[] = {29, 10, 14, 37, 13, 5};
     int n = sizeof(arr) / sizeof(arr[0]);
-
+    
     printf("Original array:\n");
     printArray(arr, n);
-
     selectionSort(arr, n);
-
     printf("Sorted array:\n");
     printArray(arr, n);
 
