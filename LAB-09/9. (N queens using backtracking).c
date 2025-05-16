@@ -33,11 +33,16 @@ bool solveNQueens(int col, int n) {
 
 void printBoard(int n) {
     for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++)
-            printf("%d ", board[i][j]);
+        for (int j = 0; j < n; j++) {
+            if (board[i][j] == 1)
+                printf("Q ");
+            else
+                printf(". ");
+        }
         printf("\n");
     }
 }
+
 
 int main() {
     int n;
